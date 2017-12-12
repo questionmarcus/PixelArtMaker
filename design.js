@@ -3,6 +3,17 @@
  * and create a grid of that size.
  */
 
-function(width, height) {
-    // Add code here
+function createTable(width, height) {
+    for (var y; y < height; y++) {
+        $('#canvas').append("<tr>\n</tr>");
+        for (var x; x < width; x++) {
+            // $('tr').last().append("<td></td>");
+        }
+    }
 }
+
+$('#chooseSize').on('submit', function(e) {
+    e.preventDefault();
+    console.log("hello");
+});
+//$('createCanvas').on('click',createTable($('widthInput').val(), $('heightInput').val()));
