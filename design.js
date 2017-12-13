@@ -4,16 +4,24 @@
  */
 
 function createTable(width, height) {
-    for (var y; y < height; y++) {
+    $('#canvas').empty();
+    for (var y = 0; y < height; y++) {
         $('#canvas').append("<tr>\n</tr>");
-        for (var x; x < width; x++) {
-            // $('tr').last().append("<td></td>");
+        for (var x = 0; x < width; x++) {
+            $('tr').last().append("<td></td>");
         }
     }
 }
 
 $('#chooseSize').on('submit', function(e) {
     e.preventDefault();
-    console.log("hello");
+    var userInput = $(this).serialize();
+    var height = userInput.split("&")[0].split("=")[1];
+    var width = userInput.split("&")[1].split("=")[1];
+    if (height === "" || width === "") {
+        alert("Invalid Canvas Size");
+    } else {
+        createTable(width, height);
+    }
 });
 //$('createCanvas').on('click',createTable($('widthInput').val(), $('heightInput').val()));
