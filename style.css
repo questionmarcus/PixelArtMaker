@@ -57,9 +57,9 @@ input[type=submit]:hover{
     box-shadow: 2px 2px 2px 0px #BDBDBD;
 }
 
-#canvasSpace{
-    margin-top:25px;
-    display:inline-block;
+table{
+    display:inline;
+    float:none;
 }
 
 td {
