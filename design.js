@@ -34,4 +34,3 @@ $('#chooseSize').on('submit', function(e) {
         createTable(width, height);
     }
 });
-//$('createCanvas').on('click',createTable($('widthInput').val(), $('heightInput').val()));

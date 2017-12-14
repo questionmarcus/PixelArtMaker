@@ -78,8 +78,8 @@ input[type=submit]:hover{
 }
 
 #canvas{
-    display:inline;
-    table-layout:fixed;
+    margin-right:auto;
+    margin-left:auto;
     float:none;
 }
 
