@@ -2,4 +2,4 @@
 
 ![screenshot](screens/screenshot.png)
 
-Check it out at [questionmarcus.github.io/PixelArtMaker](questionmarcus.github.io/PixelArtMaker).
+Check it out at [questionmarcus.github.io/PixelArtMaker](https://questionmarcus.github.io/PixelArtMaker).
