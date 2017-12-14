@@ -8,10 +8,20 @@ function createTable(width, height) {
     for (var y = 0; y < height; y++) {
         $('#canvas').append("<tr>\n</tr>");
         for (var x = 0; x < width; x++) {
-            $('tr').last().append("<td></td>");
+            $('tr').last().append("<td coloured='false'></td>");
         }
     }
 }
+
+$('#canvas').on('click', 'td', function(event) {
+    if ($(this).attr('coloured') === 'false') {
+        $(this).css("background",$('#colourPicker').val());
+        $(this).attr('coloured','true');
+    } else {
+        $(this).css("background", '#FFFFFF');
+        $(this).attr('coloured','false');
+    }
+});
 
 $('#chooseSize').on('submit', function(e) {
     e.preventDefault();

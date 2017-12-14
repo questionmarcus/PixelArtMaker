@@ -1,5 +1,24 @@
 body{
-    text-align: center
+    text-align:center;
+    width:100%;
+    padding:0px;
+    background-color:#EEEEEE;
+}
+
+h1{
+    font-family:'Press Start 2P', cursive;
+    font-size:30pt;
+    color:#EEEEEE;
+    width:800px;
+    height:100px;
+    margin-left:auto;
+    margin-right:auto;
+    background: url(images/background.png);
+}
+
+h2{
+    font-family:'Press Start 2P', cursive;
+    font-size:16pt;
 }
 
 #forms{
@@ -31,25 +50,26 @@ input[type=color]{
     height:70px;
     padding:0;
     border-style:none;
-    border-radius:35px;
 }
 
 input[type=submit]{
-    background-color:#1E88E5;
+    background-color:#5E81AC;
+    font-family:'Press Start 2P', cursive;
     margin-top:10px;
     width:100%;
     height:50px;
-    font-size:20px;
+    font-size:16pt;
     color:#FFFFFF;
     border-style:none;
     border-radius:3px;
 }
 
 input[type=submit]:hover{
-    background-color:#1E88E5;
+    background-color:#5E81AC;
+    font-family:'Press Start 2P', cursive;
     width:100%;
     height:50px;
-    font-size:20px;
+    font-size:16pt;
     color:#FFFFFF;
     border-style:none;
     border-radius:3px;
@@ -57,13 +77,14 @@ input[type=submit]:hover{
     box-shadow: 2px 2px 2px 0px #BDBDBD;
 }
 
-table{
+#canvas{
     display:inline;
+    table-layout:fixed;
     float:none;
 }
 
 td {
     width:10px;
     height:10px;
-    background-color:#bdbdbd;
+    background-color:#FFFFFF;
 }
